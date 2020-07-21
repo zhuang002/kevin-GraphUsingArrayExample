@@ -20,11 +20,11 @@ public class Main {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        boolean[][] graph=buildGraph(9);
-        int[] values=new int[9];
+        boolean[][] graph=buildGraph(10);
+        int[] values=new int[10];
         Random rand=new Random();
-        for (int i=0;i<9;i++) {
-            values[i]=rand.nextInt(9);
+        for (int i=0;i<10;i++) {
+            values[i]=rand.nextInt(10);
         }
         
         ArrayList<Integer> nodes1=getAllAchievableNodesBFS(graph,0);
@@ -122,11 +122,11 @@ public class Main {
     }
 
     private static Integer getNodeByValueBFS(boolean[][] graph, int[] values,int root, int v) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return -1;
     }
 
     private static Integer getNodeByValueDFS(boolean[][] graph, int[] values, int root, int v) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return -1;
     }
 
     private static Integer getNodeByValue(boolean[][] graph, int[] values, int v) {
